@@ -1,0 +1,10 @@
+title: "Conner Wunderlich"
+description: "Sports analytics & data science portfolio"
+theme: jekyll-theme-minimal
+
+# Optional links that show in the theme header/footer
+github_username: connerwunderlich   # <-- replace with your GitHub username
+linkedin_username: your-linkedin-handle  # optional, replace or remove
+
+# So that markdown links to .md pages Just Work
+markdown: kramdown
