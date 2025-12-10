@@ -1,1 +1,78 @@
-Analysis
+# OKC Thunder Schedule Analysis & Travel Impact Study
+Author: Conner Wunderlich  
+Tools: R, R Markdown, dplyr, ggplot2, geospatial calculations  
+
+## Overview
+This project analyzes the Oklahoma City Thunder’s 2024–25 NBA schedule with an emphasis on travel demands, rest patterns, schedule density, and opponent difficulty. The goal is to quantify how these variables interact to influence expected performance across the season. The project consists of a fully reproducible R Markdown workflow and a final HTML report containing all visualizations and insights.
+
+## Objectives
+The analysis focuses on practical scheduling questions relevant to sports analytics and NBA operations groups:
+
+- How many miles will the Thunder travel, and how is travel distributed throughout the season?
+- Which stretches impose the greatest fatigue risks (long trips, time-zone changes, back-to-backs)?
+- How often does OKC experience rest advantages or disadvantages relative to opponents?
+- How is opponent strength distributed and clustered over time?
+
+## Methodology
+
+### 1. Data Engineering and Cleaning
+- Imported NBA schedule data and filtered for OKC’s games.
+- Standardized dates, opponents, and locations.
+- Joined home-arena coordinates from a custom stadium-coordinate dataset.
+- Computed:
+  - Travel distances using the Haversine formula
+  - Rest days for both OKC and opponents
+  - Back-to-backs
+  - Time-zone shifts
+  - Opponent strength using prior-season win percentage
+
+### 2. Custom Metric Development
+To convert raw schedule attributes into actionable insights, several metrics were created:
+
+- Travel miles per road trip
+- Rest differential (OKC rest minus opponent rest)
+- Total rest-disadvantage games
+- A composite stress index combining:
+  - Miles traveled
+  - Rest disadvantage
+  - Back-to-back intensity
+  - Opponent strength
+
+These metrics resemble tools used in NBA analytics and performance departments.
+
+### 3. Visualization and Reporting
+Using ggplot2, the project includes:
+
+- Monthly travel-distance visualization
+- Season timeline of rest advantages and disadvantages
+- Opponent strength distribution plots
+- Highlighted “high-stress” schedule segments
+
+The final HTML report provides a narrative explaining how travel, rest, and opponent difficulty fluctuate throughout the season.
+
+## Key Findings
+- Several road trips create significant travel spikes, especially when paired with minimal rest.
+- Multiple stretches of the schedule give OKC rest disadvantages, often against playoff-caliber opponents.
+- Opponent difficulty is unevenly distributed, creating clusters of challenging games.
+- Schedule structure identifies windows where fatigue may meaningfully affect performance.
+
+## Files Included
+- OKC Schedule Project.Rmd — full reproducible analysis  
+- OKC-Schedule-Project.html — polished final report  
+
+## Skills Demonstrated
+- R programming with tidyverse
+- Data cleaning and feature engineering
+- Geospatial distance modeling
+- Sports-specific metric development
+- Data visualization and communication
+- Reproducible research with R Markdown
+- Translating analytics into decision-relevant insights
+
+## How to Run
+1. Open the .Rmd file in RStudio  
+2. Install required packages (listed at the top of the file)  
+3. Knit to HTML to generate the full report  
+
+## Summary
+This project represents a complete sports analytics workflow: importing data, engineering new features, constructing performance metrics, visualizing trends, and producing a cohesive analytical report. It reflects techniques regularly used in NBA front offices and applied sports-science environments.
