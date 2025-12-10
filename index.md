@@ -20,8 +20,6 @@ An interactive mock draft simulator that uses ADP data, snake-draft logic, and c
 - Bot behavior controlled by position preferences, team fandom, stacking bonuses, and controlled randomness  
 - Sleeper-style draft board UI and live lineup mapping (QB/RB/WR/TE/FLEX/SFLEX)
 
-👉 [Project page](projects/Mock-Draft-Sim)
-
 ---
 
 ### 2. OKC Thunder Schedule & Travel Analysis (NBA Analytics)
@@ -32,19 +30,15 @@ An analysis of the Oklahoma City Thunder’s schedule that quantifies travel loa
 - Built schedule difficulty metrics using opponent quality and fatigue factors  
 - Visualized stress points of the season with plots and/or dashboards
 
-👉 [Project page](projects/OKC-Schedule-Analysis)
-
 ---
 
 ### 3. GSD% – A Contact-Quality Metric in Baseball (Sabermetrics)
 
-A research-style project introducing GSD% (Grounder/Solid/Drive Percentage) as a contact-quality metric and evaluating its relationship with hitting performance.
+A research-style project introducing GSD% (Good Swing Decision Percentage) as an alternative way to evaluate a hitter's approach and discipline. 
 
-- Used batted-ball classifications to define GSD%  
-- Tested relationships to outcomes (e.g., wOBA, xwOBA, etc.)  
+- Used Statcast data and hot zones define GSD%  
+- Tested relationships to outcomes (e.g., BB%, P/PA, etc.)  
 - Included uncertainty via statistical modeling and visualization
-
-👉 [Project page](projects/GSD%-Proposal-and-Analysis)
 
 ---
 
@@ -59,3 +53,4 @@ If you’d like to talk about sports analytics, fantasy tools, or front-office s
 
 - GitHub: [@connerwunderlich27](https://github.com/connerwunderlich) 
 - Email: con27wunder@gmail.com
+- Cell: 636-577-1133
