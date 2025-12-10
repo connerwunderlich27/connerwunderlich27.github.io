@@ -2,10 +2,10 @@
 
 **Sports Analytics • Data Science • Fantasy and Sports Betting**
 
-Hi, I’m Conner – a Statistics student at Mizzou focused on turning messy sports data into clean, usable tools and insights. I’ve worked with basketball, baseball, and fantasy football data, building everything from custom metrics to interactive apps.
+Hi, I’m Conner,  a Statistics student at Mizzou focused on turning messy sports data into clean, usable tools and insights. I’ve worked with basketball, baseball, and fantasy football data, building everything from custom metrics to interactive apps.
 
 This site highlights three projects that represent how I like to work:  
-pairing **sports domain knowledge** with **clean code and stats**.
+pairing sports domain knowledge with clean code and stats.
 
 ---
 
