@@ -2,12 +2,12 @@
 
 ## Overview
 
-Good Swing Decision Percentage (GSD%) is a metric designed to evaluate a hitter’s ability to make *high-quality swing decisions* based on context and pitch location. Traditional plate-discipline metrics like Swing%, Zone%, and Chase% fail to capture the nuanced reality of hitting—especially the fact that a “good” decision changes dramatically with the count.
+Good Swing Decision Percentage (GSD%) is a metric designed to evaluate a hitter’s ability to make high-quality swing decisions based on context and pitch location. Traditional plate-discipline metrics like Swing%, Zone%, and Chase% fail to capture the nuanced reality of hitting—especially the fact that a “good” decision changes dramatically with the count.
 
-GSD% improves on existing measures by defining a **“good swing” dynamically** based on game state:
+GSD% improves on existing measures by defining a “good swing” dynamically based on the count and hitter's strengths:
 
-- **Before two strikes:** A swing is considered good only if the pitch is located within the hitter’s **pre-strikes sweet­spot**, a region defined using each player’s batted-ball performance.
-- **With two strikes:** The definition widens to include *any pitch in or just outside the strike zone* (the zone plus a 1-inch margin), reflecting the reality that hitters must expand the zone to protect the plate.
+- Before two strikes: A swing is considered good only if the pitch is located within the hitter’s pre-strikes sweet­spot, a region defined using each player’s batted-ball performance.
+- With two strikes: The definition widens to include any pitch in or just outside the strike zone (the zone plus a 1-inch margin), reflecting the reality that hitters must expand the zone to protect the plate.
 
 This gives GSD% the ability to reward hitters who correctly identify hittable pitches early while also rewarding survival mode with two strikes.
 
@@ -16,8 +16,8 @@ This gives GSD% the ability to reward hitters who correctly identify hittable pi
 ## Why GSD% Matters
 
 ### 🔍 Limitations of existing metrics  
-- **Chase%** penalizes hitters for expanding the zone with two strikes — even though this is often the *correct* decision.  
-- **Swing%** and **Zone%** ignore context and treat all pitches equally.  
+- Chase% penalizes hitters for expanding the zone with two strikes — even though this is often the correct decision.  
+- Swing% and Zone% ignore context and treat all pitches equally.  
 - Quality-of-contact metrics say nothing about the underlying decision that caused the swing.
 
 ### 🚀 What GSD% captures
@@ -32,28 +32,34 @@ This gives GSD% the ability to reward hitters who correctly identify hittable pi
 
 A swing is labeled “good” if:
 
-1. **Before two strikes:**  
+1. Before two strikes: 
    The pitch is inside the hitter’s sweet-spot region  
    (constructed from heat map data on best-performing contact areas)
 
-2. **With two strikes:**  
-   The pitch is inside the **strike zone + 1 inch** in all directions
+2. With two strikes:
+   The pitch is inside the **strike zone + 1 inch in all directions
 
 Then:
 
-**GSD% = Good Swings / Total Swings**
+GSD% = Good Swings / Total Swings
 
 ---
+
+## Broader Applications in Player Development
+
+- Parameters for a good swing can be tweaked by a coaching staff, ensuring a "good swing" matches the teams's philoshophy
+- Allows coaches another tool for player evaluation, revealing players who maintain a quality approach
+- Offers potential context for player's with low walk rates/high chase rates
 
 ## Methodology Summary
 
 The analysis consisted of:
 
-1. **Data extraction** from a pitch tracking database  
-2. **Classification of swing decisions** using SQL  
-3. **Labeling good/non-good swings based on pitch location + count**  
-4. **Constructing hitter sweet-spot regions** using historical performance  
-5. **Calculating GSD% per hitter**  
-6. **Comparing GSD% to traditional metrics** (Chase%, ZoneSwing%, etc.)
+1. Data extraction from a pitch tracking database  
+2. Classification of swing decisions using R  
+3. Labeling good/non-good swings based on pitch location + count 
+4. Constructing hitter sweet-spot regions using historical performance  
+5. Calculating GSD% per hitter
+6. Comparing GSD% to traditional metrics (Chase%, ZoneSwing%, etc.)
 
 ---
