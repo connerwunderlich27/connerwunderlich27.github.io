@@ -20,7 +20,7 @@ An interactive mock draft simulator that uses ADP data, snake-draft logic, and c
 - Bot behavior controlled by position preferences, team fandom, stacking bonuses, and controlled randomness  
 - Sleeper-style draft board UI and live lineup mapping (QB/RB/WR/TE/FLEX/SFLEX)
 
-👉 [Project page](projects/Mock Draft Sim)
+👉 [Project page](projects/Mock-Draft-Sim)
 
 ---
 
@@ -32,7 +32,7 @@ An analysis of the Oklahoma City Thunder’s schedule that quantifies travel loa
 - Built schedule difficulty metrics using opponent quality and fatigue factors  
 - Visualized stress points of the season with plots and/or dashboards
 
-👉 [Project page](projects/OKC Schedule Analysis)
+👉 [Project page](projects/OKC-Schedule-Analysis)
 
 ---
 
@@ -44,7 +44,7 @@ A research-style project introducing GSD% (Grounder/Solid/Drive Percentage) as a
 - Tested relationships to outcomes (e.g., wOBA, xwOBA, etc.)  
 - Included uncertainty via statistical modeling and visualization
 
-👉 [Project page](projects/GSD% Proposal and Snalysis)
+👉 [Project page](projects/GSD%-Proposal-and-Analysis)
 
 ---
 
