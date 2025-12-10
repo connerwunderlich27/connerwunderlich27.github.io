@@ -42,6 +42,13 @@ A research-style project introducing GSD% (Good Swing Decision Percentage) as an
 
 ---
 
+## Projects
+
+- [GSD% Proposal and Analysis](projects/GSD%25%20Proposal%20and%20Analysis/)
+- [Fantasy Football Mock Draft Simulator](projects/Mock%20Draft%20Sim/)
+- [OKC Schedule Analysis](projects/OKC%20Schedule%20Analysis/)
+
+
 ## About Me
 
 - **Degree:** B.S. in Statistics (Mizzou), graduating May 2026  
