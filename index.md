@@ -1,8 +1,3 @@
----
-layout: default
-title: "Home"
----
-
 # Conner Wunderlich
 
 **Sports Analytics • Data Science • Fantasy and Sports Betting**
