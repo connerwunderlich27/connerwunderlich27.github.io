@@ -1,1 +1,97 @@
-Mock Draft Sim
+# Fantasy Football Mock Draft Simulator  
+A customizable, data-driven mock draft experience built with Python + Streamlit
+
+---
+
+## Overview
+
+Most fantasy football mock draft tools (ESPN, Sleeper, Yahoo) produce the same predictable results every time.  
+As a competitive fantasy player, I wanted a simulator that:
+
+- Behaves like real humans with natural biases  
+- Introduces controlled randomness  
+- Adjusts to league-specific rules  
+- Visualizes the draft on an interactive draft board
+
+So I built my own.
+
+This project simulates a full fantasy draft using a custom-built Python engine and Streamlit UI.  
+Bots have adjustable personalities, positional preferences, stacking tendencies, team fandom, and chaos levels.  
+The draft board updates live with every pick, creating a realistic, dynamic mock draft environment.
+
+---
+
+##  Features
+
+### Dynamic Bot Personalities
+Bots are not robotic. They behave differently based on configurable traits:
+- Balanced
+- RB Enthusiast
+- Elite Onesie Drafter
+- Upside Drafter (rookie heavy)
+- Team Super Fan
+- Chaos Bot (maximum randomness)
+
+Each bot is driven by:
+- Position preferences  
+- Rookie preference  
+- Team-specific bias  
+- Stacking logic (QB ↔ WR/TE)  
+- Controlled randomness that increases later in the draft  
+
+These allow the user to customize their experience to mirror their specific league members and their tendencies.
+---
+
+### Draft Board
+
+The app includes a fully custom HTML/CSS draft board:
+
+- Teams across the top (with bot personas)  
+- Rounds down the side  
+- Each player pick appears as a color-coded card
+- Shows round.pick format 
+- Designed with a dark gray + red visual theme  
+
+This creates a clean, simple draft visualization.
+
+---
+
+### Custom Lineup + League Settings
+
+Before drafting, the user can configure:
+- Number of teams  
+- Number of rounds  
+- Draft slot  
+- Starting lineup requirements:
+  - RB slots (2–4)
+  - WR slots (2–4)
+  - FLEX slots (0–4)
+  - SUPERFLEX slots (0–4)
+
+The app prevents drafts from being shorter than the required starting lineup, and allows the user to mirror their league settings.
+
+---
+
+### Under the Hood (Technical Highlights)
+
+#### Project stack
+- Python
+- Streamlit (UI)
+- Pandas (ADP data + player pool)
+- Custom draft engine (pure logic)
+- HTML/CSS injection for dynamic UI rendering  
+
+#### Key algorithms
+- Player scoring system combining:
+  - ADP  
+  - Positional preferences  
+  - Rookie/team bias  
+  - Stacking bonuses  
+  - Roster-aware constraints (QB/TE caps, RB/WR balance)
+  - Round-based noise scaling  
+
+- Snake draft logic  
+- User interception (pauses bots automatically at user turn)
+
+These settings make each draft feel like the real thing, with variance and logic akin to human drafts. 
+---
